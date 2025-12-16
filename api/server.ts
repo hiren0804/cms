@@ -1,5 +1,7 @@
-import index from '../index';
+import  dotenv from 'dotenv';
+import app from './src/app.ts';
 
-index.listen(3000,()=>{
+dotenv.config();
+app.listen(3000,()=>{
     console.log("http://localhost:3000")
 })
